@@ -15,7 +15,9 @@ urlpatterns = patterns('',
     # Uncomment the next line to enable the admin:
     url(r'^admin/', include(admin.site.urls)),
     url(r'^signup/', 'auth.views.signup', name='signup'),
-    url(r'^$', 'auth.views.home', name='home'),
+    # url(r'^$', 'auth.views.home', name='home'),
+    url(r'^secret/$', 'auth.views.special_page', name='special'),
+    url(r'^accounts/login/$', 'auth.views.user_login', name='user_login'),
 
 
 )
