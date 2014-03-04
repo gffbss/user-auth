@@ -6,7 +6,7 @@ admin.autodiscover()
 
 urlpatterns = patterns('',
     # Examples:
-    # url(r'^$', 'auth_tutorial.views.home', name='home'),
+    url(r'^$', 'auth.views.index', name='index'),
     # url(r'^auth_tutorial/', include('auth_tutorial.foo.urls')),
 
     # Uncomment the admin/doc line below to enable admin documentation:
@@ -14,10 +14,13 @@ urlpatterns = patterns('',
 
     # Uncomment the next line to enable the admin:
     url(r'^admin/', include(admin.site.urls)),
-    url(r'^signup/', 'auth.views.signup', name='signup'),
-    # url(r'^$', 'auth.views.home', name='home'),
+    # url(r'^signup/', 'auth.views.signup', name='signup'),
     url(r'^secret/$', 'auth.views.special_page', name='special'),
-    url(r'^accounts/login/$', 'auth.views.user_login', name='user_login'),
+    # url(r'^accounts/login/$', 'auth.views.user_login', name='user_login'),
+
+    # The Django Registration library login
+    url(r'^accounts/', include('registration.backends.default.urls')),
+    # url(r'^accounts/profile', 'auth.views.profile', name='profile')
 
 
 )

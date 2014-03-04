@@ -5,6 +5,13 @@ from django.contrib.auth.models import User
 from django.shortcuts import render, redirect
 from auth.forms import SignUpForm, LoginForm
 
+
+def index(request):
+    return render(request, "index.html")
+
+def profile(request):
+    return render(request, "special.html")
+
 def signup(request):
     if request.method == "POST":
         form = SignUpForm(request.POST)
