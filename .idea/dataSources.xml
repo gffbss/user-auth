@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DataSourceManagerImpl" format="xml" hash="2954951108">
+    <data-source source="LOCAL" name="Django default" uuid="3577a4b3-b974-4852-9ec2-6ac6f5a17381">
+      <driver-ref>mysql</driver-ref>
+      <jdbc-driver>com.mysql.jdbc.Driver</jdbc-driver>
+      <jdbc-url>jdbc:mysql:///auth_tutorial</jdbc-url>
+      <user-name>root</user-name>
+      <user-password>dfd9dfdedfc3dfc4dfcddfd8dfcbdfd3df9e</user-password>
+      <libraries>
+        <library>
+          <url>file://$USER_HOME$/Library/Preferences/PyCharm20/jdbc-drivers/mysql-connector-java-5.1.26-bin.jar</url>
+        </library>
+      </libraries>
+    </data-source>
+  </component>
+</project>
+
